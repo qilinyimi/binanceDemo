@@ -33,8 +33,16 @@ public class DemoController {
   /**
    * 测试链接
    */
-  @GetMapping("test/connect/proxy")
+  @GetMapping("test/proxy/connect")
   public String testConnectProxy() {
     return binanceDemoService.testConnectProxy();
+  }
+
+  /**
+   * 测试交易信息
+   */
+  @GetMapping("test/proxy/exchangeInfo")
+  public String testProxyExchangeInfo () {
+    return binanceDemoService.testProxyExchangeInfo();
   }
 }

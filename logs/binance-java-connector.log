@@ -141,3 +141,50 @@ com.binance.connector.futures.client.exceptions.BinanceConnectorException: [Resp
 2023-05-12 19:00:09.794[1683889209794] | INFO  | http-nio-8002-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
 2023-05-12 19:00:09.795[1683889209795] | INFO  | http-nio-8002-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
 2023-05-12 19:00:09.817[1683889209817] | INFO  | http-nio-8002-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/time
+2023-05-12 19:07:47.135[1683889667135] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Starting MyBinanceApplication using Java 19.0.1 with PID 18192 (D:\binanceDemo\target\classes started by kyyi in D:\binanceDemo)
+2023-05-12 19:07:47.137[1683889667137] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-12 19:07:47.762[1683889667762] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8002 (http)
+2023-05-12 19:07:47.768[1683889667768] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:07:47.769[1683889667769] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-05-12 19:07:47.769[1683889667769] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-12 19:07:47.833[1683889667833] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-05-12 19:07:47.833[1683889667833] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 651 ms
+2023-05-12 19:07:48.058[1683889668058] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:07:48.074[1683889668074] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8002 (http) with context path ''
+2023-05-12 19:07:48.080[1683889668080] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Started MyBinanceApplication in 1.216 seconds (process running for 1.894)
+2023-05-12 19:08:01.063[1683889681063] | INFO  | http-nio-8002-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-12 19:08:01.063[1683889681063] | INFO  | http-nio-8002-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-05-12 19:08:01.064[1683889681064] | INFO  | http-nio-8002-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2023-05-12 19:08:01.079[1683889681079] | INFO  | http-nio-8002-exec-2 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/time
+2023-05-12 19:17:46.328[1683890266328] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Starting MyBinanceApplication using Java 19.0.1 with PID 2040 (D:\binanceDemo\target\classes started by kyyi in D:\binanceDemo)
+2023-05-12 19:17:46.330[1683890266330] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-12 19:17:46.946[1683890266946] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8002 (http)
+2023-05-12 19:17:46.952[1683890266952] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:17:46.953[1683890266953] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-05-12 19:17:46.953[1683890266953] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-12 19:17:47.016[1683890267016] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-05-12 19:17:47.017[1683890267017] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 644 ms
+2023-05-12 19:17:47.244[1683890267244] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:17:47.260[1683890267260] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8002 (http) with context path ''
+2023-05-12 19:17:47.265[1683890267265] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Started MyBinanceApplication in 1.212 seconds (process running for 1.899)
+2023-05-12 19:18:43.361[1683890323361] | INFO  | http-nio-8002-exec-3 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-12 19:18:43.361[1683890323361] | INFO  | http-nio-8002-exec-3 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-05-12 19:18:43.362[1683890323362] | INFO  | http-nio-8002-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2023-05-12 19:18:43.377[1683890323377] | INFO  | http-nio-8002-exec-3 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/exchangeInfo
+2023-05-12 19:19:08.803[1683890348803] | INFO  | http-nio-8002-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/exchangeInfo
+2023-05-12 19:19:56.487[1683890396487] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Starting MyBinanceApplication using Java 19.0.1 with PID 21440 (D:\binanceDemo\target\classes started by kyyi in D:\binanceDemo)
+2023-05-12 19:19:56.489[1683890396489] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-12 19:19:57.128[1683890397128] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port(s): 8002 (http)
+2023-05-12 19:19:57.134[1683890397134] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:19:57.135[1683890397135] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2023-05-12 19:19:57.135[1683890397135] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-12 19:19:57.197[1683890397197] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2023-05-12 19:19:57.198[1683890397198] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2023-05-12 19:19:57.431[1683890397431] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8002"]
+2023-05-12 19:19:57.448[1683890397448] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port(s): 8002 (http) with context path ''
+2023-05-12 19:19:57.454[1683890397454] | INFO  | main       | c.b.d.mybinance.MyBinanceApplication - Started MyBinanceApplication in 1.247 seconds (process running for 1.972)
+2023-05-12 19:20:34.951[1683890434951] | INFO  | http-nio-8002-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-12 19:20:34.951[1683890434951] | INFO  | http-nio-8002-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2023-05-12 19:20:34.951[1683890434951] | INFO  | http-nio-8002-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 0 ms
+2023-05-12 19:20:34.969[1683890434969] | INFO  | http-nio-8002-exec-1 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/time
+2023-05-12 19:20:38.092[1683890438092] | INFO  | http-nio-8002-exec-3 | c.b.c.f.client.utils.RequestHandler  - GET https://dapi.binance.com/dapi/v1/exchangeInfo
