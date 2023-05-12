@@ -29,4 +29,12 @@ public class DemoController {
   public String testConnect() {
     return binanceDemoService.testConnect();
   }
+
+  /**
+   * 测试链接
+   */
+  @GetMapping("test/connect/proxy")
+  public String testConnectProxy() {
+    return binanceDemoService.testConnectProxy();
+  }
 }
