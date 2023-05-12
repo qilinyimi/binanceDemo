@@ -1,6 +1,8 @@
 package com.binance.demo.mybinance.service.impl;
 
-import cn.hutool.json.JSONUtil;
+import cn.hutool.core.util.StrUtil;
+import com.binance.api.client.BinanceApiClientFactory;
+import com.binance.api.client.BinanceApiRestClient;
 import com.binance.demo.mybinance.service.BinanceDemoService;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,10 +30,11 @@ public class BinanceDemoServiceImpl implements BinanceDemoService {
 
   @Override
   public String testConnect() {
-//    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance(API_KEY, SECRET_KEY);
-//    BinanceApiRestClient client = factory.newRestClient();
-//    client.ping();
-    JSONUtil.toJsonStr(restTemplate.getForObject("https://api.binance.com/api/v1/ping", Object.class));
-    return "ping success";
+    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance(API_KEY, SECRET_KEY);
+    BinanceApiRestClient client = factory.newRestClient();
+//    client.getServerTime();
+//    String jsonStr = JSONUtil.toJsonStr(
+//        restTemplate.getForObject("https://api.binance.com/api/v1/ping", Object.class));
+    return StrUtil.format("Binance服务器时间戳:{}",client.getServerTime());
   }
 }
