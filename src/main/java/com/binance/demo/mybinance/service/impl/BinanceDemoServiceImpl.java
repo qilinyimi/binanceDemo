@@ -1,10 +1,11 @@
 package com.binance.demo.mybinance.service.impl;
 
-import com.binance.api.client.BinanceApiClientFactory;
-import com.binance.api.client.BinanceApiRestClient;
+import cn.hutool.json.JSONUtil;
 import com.binance.demo.mybinance.service.BinanceDemoService;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * <p>
@@ -22,11 +23,15 @@ public class BinanceDemoServiceImpl implements BinanceDemoService {
   @Value("${binance.secret.key:2223232}")
   private String SECRET_KEY;
 
+  @Resource
+  RestTemplate restTemplate;
+
   @Override
   public String testConnect() {
-    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance(API_KEY, SECRET_KEY);
-    BinanceApiRestClient client = factory.newRestClient();
-    client.ping();
+//    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance(API_KEY, SECRET_KEY);
+//    BinanceApiRestClient client = factory.newRestClient();
+//    client.ping();
+    JSONUtil.toJsonStr(restTemplate.getForObject("https://api.binance.com/api/v1/ping", Object.class));
     return "ping success";
   }
 }
