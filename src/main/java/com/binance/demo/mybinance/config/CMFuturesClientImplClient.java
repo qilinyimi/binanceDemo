@@ -24,12 +24,16 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class CMFuturesClientImplClient {
-  @Value("${binance.api.key:2223232}")
+  @Value("${binance.api.key:dbefbc809e3e83c283a984c3a1459732ea7db1360ca80c5c2c8867408d28cc83}")
   private String API_KEY;
-  @Value("${binance.secret.key:2223232}")
+  @Value("${binance.secret.key:2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9}")
   private String SECRET_KEY;
-  @Bean
+  @Bean("cmFuturesClientImplClient")
   public CMFuturesClientImpl cmFuturesClientImplClient() {
+    return new CMFuturesClientImpl(API_KEY, SECRET_KEY);
+  }
+  @Bean("cmFuturesClientImplClientProxy")
+  public CMFuturesClientImpl cmFuturesClientImplClientProxy() {
     CMFuturesClientImpl client = new CMFuturesClientImpl(API_KEY, SECRET_KEY);
     Proxy proxyConn = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890));
     //本地代理不需要定义认证信息

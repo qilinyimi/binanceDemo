@@ -3,7 +3,7 @@ package com.binance.demo.mybinance.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
-import com.binance.connector.futures.client.impl.CMFuturesClientImpl;
+import com.binance.demo.mybinance.builder.BinanceClientBuilder;
 import com.binance.demo.mybinance.service.BinanceDemoService;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +27,7 @@ public class BinanceDemoServiceImpl implements BinanceDemoService {
   private String SECRET_KEY;
 
   @Resource
-  CMFuturesClientImpl cmFuturesClientImplClient;
+  BinanceClientBuilder binanceClientBuilder;
   @Resource
   RestTemplate restTemplate;
 
@@ -43,12 +43,12 @@ public class BinanceDemoServiceImpl implements BinanceDemoService {
   @Override
   public String testConnectProxy() {
     return StrUtil.format("Binance服务器时间戳（Proxy模式）:{}",
-        cmFuturesClientImplClient.market().time());
+        binanceClientBuilder.client().market().time());
   }
 
   @Override
   public String testProxyExchangeInfo() {
     return  StrUtil.format("Binance交易信息（Proxy模式）:{}",
-        cmFuturesClientImplClient.market().exchangeInfo());
+        binanceClientBuilder.client().market().exchangeInfo());
   }
 }
