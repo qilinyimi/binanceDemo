@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
  * 作用：RestTemplateConfig
  * </p>
  *
- * @author zhanglb1@tedu.cn
+ * @author kyyi
  * @since 2023-05-12 10:05
  */
 @Configuration

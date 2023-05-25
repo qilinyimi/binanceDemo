@@ -35,6 +35,7 @@
 			<artifactId>binance-futures-connector-java</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		<!--spring-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

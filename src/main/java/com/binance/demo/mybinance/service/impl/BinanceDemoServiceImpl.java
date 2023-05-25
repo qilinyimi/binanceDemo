@@ -3,6 +3,7 @@ package com.binance.demo.mybinance.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
+import com.binance.demo.mybinance.builder.BinanceClient;
 import com.binance.demo.mybinance.builder.BinanceClientBuilder;
 import com.binance.demo.mybinance.service.BinanceDemoService;
 import jakarta.annotation.Resource;
@@ -42,8 +43,10 @@ public class BinanceDemoServiceImpl implements BinanceDemoService {
 
   @Override
   public String testConnectProxy() {
+//    return StrUtil.format("Binance服务器时间戳（Proxy模式）:{}",
+//        binanceClientBuilder.client().market().time());
     return StrUtil.format("Binance服务器时间戳（Proxy模式）:{}",
-        binanceClientBuilder.client().market().time());
+        BinanceClient.client().market().time());
   }
 
   @Override

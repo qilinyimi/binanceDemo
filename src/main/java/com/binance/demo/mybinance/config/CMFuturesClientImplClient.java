@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
  * 作用：CMFuturesClientImpl  Client
  * </p>
  *
- * @author zhanglb1@tedu.cn
+ * @author kyyi
  * @since 2023-05-12 19:04
  */
 @Configuration

@@ -24,4 +24,5 @@ public interface BinanceDemoService {
    * 交易信息[代理]
    */
   String testProxyExchangeInfo();
+
 }
